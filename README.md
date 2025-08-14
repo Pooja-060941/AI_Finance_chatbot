@@ -4,21 +4,21 @@ A comprehensive AI-powered financial advisor built with Streamlit and HuggingFac
 
 ## 🚀 Features
 
-- *Personalized AI Financial Advice*: Get tailored recommendations based on your profile
-- *Real-time Expense Tracking*: Track and categorize your expenses with smart analysis
-- *Financial Health Scoring*: Comprehensive scoring system with actionable feedback
-- *Interactive Visualizations*: Charts and graphs for better financial insights
-- *Multiple AI Models*: Sentiment analysis, intent classification, and text generation
-- *Secure Data Handling*: Privacy-focused design with no permanent data storage
-- *Responsive Design*: Works on desktop and mobile devices
+- **Personalized AI Financial Advice**: Get tailored recommendations based on your profile
+- **Real-time Expense Tracking**: Track and categorize your expenses with smart analysis
+- **Financial Health Scoring**: Comprehensive scoring system with actionable feedback
+- **Interactive Visualizations**: Charts and graphs for better financial insights
+- **Multiple AI Models**: Sentiment analysis, intent classification, and text generation
+- **Secure Data Handling**: Privacy-focused design with no permanent data storage
+- **Responsive Design**: Works on desktop and mobile devices
 
-## 🛠 Technology Stack
+## 🛠️ Technology Stack
 
-- *Frontend*: Streamlit with custom CSS styling
-- *AI/ML*: HuggingFace Transformers API
-- *Data Processing*: Pandas, NumPy
-- *Visualizations*: Plotly
-- *Backend*: Python with modular architecture
+- **Frontend**: Streamlit with custom CSS styling
+- **AI/ML**: HuggingFace Transformers API
+- **Data Processing**: Pandas, NumPy
+- **Visualizations**: Plotly
+- **Backend**: Python with modular architecture
 
 ## 📋 Prerequisites
 
@@ -32,24 +32,24 @@ A comprehensive AI-powered financial advisor built with Streamlit and HuggingFac
 
 Create a new folder for your project:
 
-bash
+```bash
 mkdir ai-financial-chatbot
 cd ai-financial-chatbot
-
+```
 
 ### 2. Create the Project Files
 
 Create the following files in your project directory:
 
-- app.py (Main application - use the first artifact)
-- enhanced_app.py (Enhanced version - use the enhanced artifact)
-- config.py (Configuration file)
-- utils.py (Utility functions)
-- requirements.txt (Dependencies)
+- `app.py` (Main application - use the first artifact)
+- `enhanced_app.py` (Enhanced version - use the enhanced artifact)
+- `config.py` (Configuration file)
+- `utils.py` (Utility functions)
+- `requirements.txt` (Dependencies)
 
 ### 3. Set up Python Environment
 
-bash
+```bash
 # Create virtual environment
 python -m venv financial_chatbot_env
 
@@ -61,7 +61,7 @@ source financial_chatbot_env/bin/activate
 
 # Install dependencies
 pip install -r requirements.txt
-
+```
 
 ### 4. Get HuggingFace API Key
 
@@ -73,29 +73,29 @@ pip install -r requirements.txt
 
 ### 5. Configure API Key
 
-*Option A: Environment Variable (Recommended)*
-bash
+**Option A: Environment Variable (Recommended)**
+```bash
 # On Windows:
 set HUGGINGFACE_API_KEY=your_api_key_here
 
 # On macOS/Linux:
 export HUGGINGFACE_API_KEY=your_api_key_here
+```
 
-
-*Option B: Direct Configuration*
-Edit the config.py file and replace YOUR_API_KEY_HERE with your actual API key.
+**Option B: Direct Configuration**
+Edit the `config.py` file and replace `YOUR_API_KEY_HERE` with your actual API key.
 
 ### 6. Run the Application
 
-bash
+```bash
 # Run basic version
 streamlit run app.py
 
 # OR run enhanced version (recommended)
 streamlit run enhanced_app.py
+```
 
-
-The application will open in your browser at http://localhost:8501
+The application will open in your browser at `http://localhost:8501`
 
 ## 🎯 Usage Guide
 
@@ -123,10 +123,10 @@ The application will open in your browser at http://localhost:8501
 
 The chatbot uses these HuggingFace models:
 
-- *Sentiment Analysis*: cardiffnlp/twitter-roberta-base-sentiment-latest
-- *Text Generation*: microsoft/DialoGPT-medium
-- *Summarization*: facebook/bart-large-cnn
-- *Question Answering*: deepset/roberta-base-squad2
+- **Sentiment Analysis**: `cardiffnlp/twitter-roberta-base-sentiment-latest`
+- **Text Generation**: `microsoft/DialoGPT-medium`
+- **Summarization**: `facebook/bart-large-cnn`
+- **Question Answering**: `deepset/roberta-base-squad2`
 
 ## 🔒 Security Features
 
@@ -139,26 +139,26 @@ The chatbot uses these HuggingFace models:
 ## 🎨 Customization
 
 ### Modify Financial Rules
-Edit config.py to adjust:
+Edit `config.py` to adjust:
 - Emergency fund target months
 - Recommended savings rates
 - Expense category thresholds
 - User type configurations
 
 ### Add New Expense Categories
-Update EXPENSE_CATEGORIES in config.py:
-python
+Update `EXPENSE_CATEGORIES` in `config.py`:
+```python
 EXPENSE_CATEGORIES = [
     'Housing', 'Food', 'Transportation', 'Healthcare',
     'Your_Custom_Category', 'Another_Category'
 ]
-
+```
 
 ### Customize AI Responses
 Modify the advice templates in the chatbot class methods:
-- _get_budgeting_advice()
-- _get_investment_advice()
-- _get_savings_advice()
+- `_get_budgeting_advice()`
+- `_get_investment_advice()`
+- `_get_savings_advice()`
 - etc.
 
 ## 🚀 Advanced Features
@@ -183,7 +183,7 @@ Automatic categorization and analysis including:
 - Financial health dashboards
 - Goal progress tracking
 
-## 🛠 Development Setup (VS Code)
+## 🛠️ Development Setup (VS Code)
 
 ### Recommended Extensions
 - Python
@@ -192,19 +192,19 @@ Automatic categorization and analysis including:
 - GitLens (for version control)
 
 ### VS Code Configuration
-Create .vscode/settings.json:
-json
+Create `.vscode/settings.json`:
+```json
 {
     "python.defaultInterpreterPath": "./financial_chatbot_env/Scripts/python.exe",
     "python.terminal.activateEnvironment": true,
     "python.linting.enabled": true,
     "python.linting.pylintEnabled": true
 }
-
+```
 
 ### Debug Configuration
-Create .vscode/launch.json:
-json
+Create `.vscode/launch.json`:
+```json
 {
     "version": "0.2.0",
     "configurations": [
@@ -218,33 +218,33 @@ json
         }
     ]
 }
-
+```
 
 ## 📈 Future Enhancements
 
 Potential improvements you can implement:
 
-1. *Database Integration*
+1. **Database Integration**
    - PostgreSQL or MongoDB for data persistence
    - User account management
    - Historical data tracking
 
-2. *Advanced AI Features*
+2. **Advanced AI Features**
    - Custom fine-tuned models
    - Multiple language support
    - Voice interface integration
 
-3. *Financial API Integration*
+3. **Financial API Integration**
    - Real-time stock prices
    - Bank account connectivity
    - Cryptocurrency tracking
 
-4. *Advanced Analytics*
+4. **Advanced Analytics**
    - Machine learning predictions
    - Trend analysis
    - Risk assessment models
 
-5. *Mobile App*
+5. **Mobile App**
    - React Native or Flutter app
    - Push notifications
    - Offline functionality
@@ -253,47 +253,47 @@ Potential improvements you can implement:
 
 ### Common Issues
 
-*1. API Key Not Working*
-bash
+**1. API Key Not Working**
+```bash
 # Check if environment variable is set
 echo $HUGGINGFACE_API_KEY  # macOS/Linux
 echo %HUGGINGFACE_API_KEY%  # Windows
+```
 
-
-*2. Module Import Errors*
-bash
+**2. Module Import Errors**
+```bash
 # Ensure all files are in the same directory
 # Check virtual environment is activated
 which python  # Should point to your venv
+```
 
-
-*3. Streamlit Port Issues*
-bash
+**3. Streamlit Port Issues**
+```bash
 # Run on different port
 streamlit run enhanced_app.py --server.port 8502
+```
 
-
-*4. Model Loading Errors*
+**4. Model Loading Errors**
 - HuggingFace models may take time to load initially
 - Check internet connection
 - Verify API key permissions
 
 ### Performance Optimization
 
-*1. Caching*
-python
+**1. Caching**
+```python
 @st.cache_data
 def expensive_calculation():
     # Add caching to slow functions
     pass
+```
 
-
-*2. Session State Management*
-python
+**2. Session State Management**
+```python
 # Clear unused session data periodically
 if len(st.session_state.messages) > 50:
     st.session_state.messages = st.session_state.messages[-30:]
-
+```
 
 ## 📄 License
 
